@@ -21,6 +21,41 @@ g_PluginInfo =
 						Permission = "cps.help",
 						Handler = HandleCPSHelpCommand,
 					},
+					friend =
+					{
+						HelpString = "Global command for friends.",
+						Permission = "cps.friend",
+						Handler = HandleFriendCommand,
+					},
+			},
+		},
+		["/friend"] =
+		{
+			Permission = "cps.friend",
+			HelpString = "Global command for friends.",
+			Handler = HandleFriendCommand,
+			Alias = { "/friends", },
+			Category = "Friend",
+			Subcommands =
+			{
+					add =
+					{
+						HelpString = "Add a friend.",
+						Permission = "cps.friend.add",
+						Handler = HandleFriendAddCommand,
+					},
+					remove =
+					{
+						HelpString = "Removes a friend.",
+						Permission = "cps.friend.remove",
+						Handler = HandleFriendRemoveCommand,
+					},
+					status =
+					{
+						HelpString = "Check if you're friends.",
+						Permission = "cps.friend.status",
+						Handler = HandleFriendStatusCommand,
+					},
 			},
 		},
 	},

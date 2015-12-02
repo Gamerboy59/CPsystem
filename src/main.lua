@@ -10,6 +10,10 @@ function Initialize(Plugin)
 	RegisterPluginInfoCommands();
 	
 	-- RegisterPluginInfoConsoleCommands();
+	
+	localDir = "C:\\Users\\$user\\Desktop\\Cuberite\\Plugins\\CPS"
+	
+	prefixTag = cChatColor.Yellow..'[CPS]'
 
 	LOG("Initialised " .. Plugin:GetName() .. " v." .. Plugin:GetVersion())
 	return true
